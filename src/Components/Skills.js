@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import {FaReact, FaSymfony,FaHtml5,FaCss3Alt,FaBootstrap,FaPhp,FaJava,FaPython,FaGithub} from 'react-icons/fa'
-import {SiJquery,SiMysql,SiMariadb,SiOracle,SiMicrosoftaccess,SiTailwindcss,SiJavascript,SiCsharp} from 'react-icons/si'
-import {DiGit,} from 'react-icons/di'
+import DevSkills from './devSkills'
 
 
 export default class Skills extends Component {
@@ -10,53 +8,19 @@ export default class Skills extends Component {
 
     return(
       
-      <div className="grid grid-cols-2">
+      <div className="">
 
         {/* Dev Skills */}
-        <div className="h-64">
+        <div className="h-auto">
 
           {/* Titre */}
           <div>
             Développement Informatique
           </div>
 
-          {/* SQL */}
+          {/* Skills */}
           <div>
-            <SiMysql/>
-            <SiMariadb/>
-            <SiOracle/>
-            <SiMicrosoftaccess/>
-          </div>
-
-          {/* HTML / CSS */}
-          <div>
-            <FaHtml5/>
-            <FaCss3Alt/>
-            <FaBootstrap/>
-            <SiTailwindcss/>
-          </div>
-
-          
-          {/* Langages */}
-          <div>
-            <FaPhp/>
-            <SiJavascript/>
-            <FaJava/>
-            <SiCsharp/>
-            <FaPython/>
-          </div>
-
-          {/* Librairies */}
-          <div>
-            <FaReact/>
-            <FaSymfony/>
-            <SiJquery/>
-          </div>
-
-          {/* Git */}
-          <div>
-            <DiGit/>
-            <FaGithub/>
+            <DevSkills/>
           </div>
 
         </div>
