@@ -14,7 +14,7 @@ export default class DevSkills extends Component{
 
           <div className="flex flex-1 flex-col gap-2 h-auto py-4 items-end">
 
-            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-10">
+            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-10">
               <div className="ml-4 w-24 font-light text-xl text-gray-600">Données</div>
               <div className="ml-12 w-64 flex flex-row space-x-4 text-4xl text-gray-500">
                 <div><SiMysql/></div>
@@ -24,7 +24,7 @@ export default class DevSkills extends Component{
               </div>
             </div>
 
-            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-12">
+            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-12">
               <div className="ml-4 w-24 font-light text-xl text-gray-600">Intégation</div>
               <div className="ml-12 w-64 flex flex-row space-x-4 text-4xl text-gray-500">
                 <div><FaHtml5/></div>
@@ -34,7 +34,7 @@ export default class DevSkills extends Component{
               </div>
             </div>
             
-            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:-translate-x-px">
+            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:-translate-x-px">
               <div className="ml-4 w-24 font-light text-xl text-gray-600">Langages</div>
               <div className="ml-12 w-64 flex flex-row space-x-4 text-4xl text-gray-500">
                 <div><FaPhp/></div>
@@ -45,7 +45,7 @@ export default class DevSkills extends Component{
               </div>
             </div>
             
-            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-24">
+            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-24">
               <div className="ml-4 w-24 font-light text-xl text-gray-600">Librairies</div>
               <div className="ml-12 w-64 flex flex-row space-x-4 text-4xl text-gray-500">
                 <div><FaReact/></div>
@@ -54,7 +54,7 @@ export default class DevSkills extends Component{
               </div>
             </div>
 
-            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-32">
+            <div className="flex flex-row flex-1 auto rounded-l-full items-center py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-32">
               <div className="ml-4 w-24 font-light text-xl text-gray-600">Versionning</div>
               <div className="ml-12 w-64 flex flex-row space-x-4 text-4xl text-gray-500">
                 <div><DiGit/></div>

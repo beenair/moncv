@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DevSkills from './devSkills'
+import ItSkills from './itSkills'
 
 
 export default class Skills extends Component {
@@ -27,7 +28,7 @@ export default class Skills extends Component {
 
         {/* IT Skills */}
         <div className="h-64">
-          IT Skills
+          <ItSkills/>
         </div>
 
         {/* Soft Skills */}
