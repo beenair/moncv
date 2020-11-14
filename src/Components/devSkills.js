@@ -88,14 +88,8 @@ export default class DevSkills extends Component{
 
           </div>
 
-
-          
-
           
         </div>
-
-
-        
 
       </div>
 
