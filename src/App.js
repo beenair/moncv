@@ -1,6 +1,7 @@
 import './tailwind.output.css'
 import Header from './Components/header'
 import Skills from './Components/skills'
+import Experiences from './Components/experiences';
 
 function App() {
   return (
@@ -13,13 +14,13 @@ function App() {
       </div>
 
       {/* SKILLS */}
-      <div className="bg-gray-900 h-screen">
+      <div className="bg-gray-900">
         <Skills/>
       </div>
 
       {/* PARCOURS */}
       <div className="bg-gray-800">
-        
+        <Experiences/>
       </div>
 
       {/* FORMATION */}
@@ -33,12 +34,12 @@ function App() {
       </div>
 
       {/* PORTFOLIO */}
-      <div className="bg-gray-700 h-screen">
+      <div className="bg-gray-700 h-screen hidden">
         
       </div>
 
       {/* FORMULAIRE CONTACT */}
-      <div className="bg-gray-800 h-screen">
+      <div className="bg-gray-700 h-screen">
         
       </div>
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import DevSkills from './devSkills'
 import ItSkills from './itSkills'
+import SoftSkills from './softSkills'
 
 
 export default class Skills extends Component {
@@ -9,31 +10,21 @@ export default class Skills extends Component {
 
     return(
       
-      <div className="">
+      <div className="bg-gray-900 border-t border-gray-900 grid grid-cols gap-16">
 
         {/* Dev Skills */}
-        <div className="h-auto">
-
-          {/* Titre */}
-          <div>
-            Développement Informatique
-          </div>
-
-          {/* Skills */}
-          <div>
-            <DevSkills/>
-          </div>
-
+        <div className="">
+          <DevSkills/>          
         </div>
 
         {/* IT Skills */}
-        <div className="h-64">
+        <div className="">
           <ItSkills/>
         </div>
 
         {/* Soft Skills */}
-        <div className="col-span-2 h-64">
-          Soft Skills
+        <div className="">
+          <SoftSkills/>
         </div>
         
       </div>

@@ -11,33 +11,7 @@ export default class ItSkills extends Component{
 
       <div className="flex flex-row bg-gray-900">
 
-          <div className="w-3/5 bg-gray-900 relative">
-
-            <div className="w-2/3 bg-gray-800 p-2 border-4 border-blue-800 rounded-2xl z-10 absolute top-0 right-0">
-
-              <div className="text-3xl font-bold text-blue-600">
-                Informatique et Réseau
-              </div>
-
-
-              <div className="text-xl font-light text-blue-500 mt-4">
-                <ul>
-                  <li>Une certaine aisance avec les bases de données</li>
-                  <li>Sensibilité à l'UX / UI</li>
-                  <li>Bases sur les différents langages de programmation</li>
-                  <li>Notions sur les librairies et frameworks (React / React Native / Symfony)</li>
-                  <li>Travail collaboratif / Versionning</li>
-                </ul>
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-
-        <div className="flex flex-row z-0 relative">
+        <div className="flex flex-row">
 
           <div className="flex flex-1 flex-col gap-2 h-auto py-4 items-start">
 
@@ -88,6 +62,28 @@ export default class ItSkills extends Component{
           </div>
 
         </div>
+
+
+
+        <div className="bg-gray-800 p-2 mr-64 border-4 border-blue-800 rounded-2xl">
+
+          <div className="text-3xl font-bold text-blue-600">
+            Informatique et Réseau
+          </div>
+
+
+          <div className="text-xl font-light text-blue-500 mt-4">
+            <ul>
+              <li>Une certaine aisance avec les bases de données</li>
+              <li>Sensibilité à l'UX / UI</li>
+              <li>Bases sur les différents langages de programmation</li>
+              <li>Notions sur les librairies et frameworks (React / React Native / Symfony)</li>
+              <li>Travail collaboratif / Versionning</li>
+            </ul>
+          </div>
+
+        </div>
+
 
 
       </div>
