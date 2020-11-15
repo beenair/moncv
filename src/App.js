@@ -6,7 +6,7 @@ import Experiences from './Components/experiences';
 function App() {
   return (
 
-    <div>
+    <div className="grid gap-12 bg-gray-900">
 
       {/* ENTETE */}
       <div className="bg-gray-800">

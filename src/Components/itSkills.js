@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import {SiLogmein,SiTeamviewer,SiVmware,SiDocker,SiOpenvpn,SiCisco,SiAdobephotoshop,SiAdobeillustrator} from 'react-icons/si'
-import {DiWindows,DiLinux,DiApple} from 'react-icons/di'
+import {SiLogmein,SiTeamviewer,SiVmware,SiDocker,SiOpenvpn,SiCisco,SiAdobephotoshop,SiAdobeillustrator,SiIos} from 'react-icons/si'
+import {DiWindows,DiLinux,DiApple,DiAndroid} from 'react-icons/di'
 import {MdHeadsetMic} from 'react-icons/md'
 import {FaWifi,FaNetworkWired} from 'react-icons/fa'
+import {IoIosArrowForward} from 'react-icons/io'
 
 
 export default class ItSkills extends Component{
@@ -15,18 +16,26 @@ export default class ItSkills extends Component{
 
           <div className="flex flex-1 flex-col gap-2 h-auto py-4 items-start">
 
-            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-r border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-24">
-              <div className="mr-4 w-24 font-light text-xl text-gray-600">Systèmes</div>
-              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-500">
+            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-r border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-2">
+              <div className="mr-4 w-24 flex flex-row font-light text-xl text-gray-400">
+                <div>Systèmes</div> 
+                <div className="text-2xl pt-1 ml-1"><IoIosArrowForward/></div>
+              </div>
+              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-200">
                 <div><DiWindows/></div>
                 <div><DiLinux/></div>
                 <div><DiApple/></div>
+                <div><SiIos/></div>
+                <div><DiAndroid/></div>
               </div>
             </div>
 
-            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-12">
-              <div className="mr-4 w-24 font-light text-xl text-gray-600">Réseau</div>
-              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-500">
+            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-r border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-12">
+              <div className="mr-4 w-24 flex flex-row font-light text-xl text-gray-400">
+                <div>Réseau</div>
+                <div className="text-2xl pt-1 ml-1"><IoIosArrowForward/></div>
+              </div>
+              <div className="mr-12 w-64 flex flex-row space-x-reverse space-x-4 text-4xl text-gray-200">
                 <div><FaWifi/></div>
                 <div><SiOpenvpn/></div>
                 <div><SiCisco/></div>
@@ -34,26 +43,35 @@ export default class ItSkills extends Component{
               </div>
             </div>
             
-            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-24">
-              <div className="mr-4 w-24 font-light text-xl text-gray-600">Support</div>
-              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-500">
+            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-r border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-24">
+              <div className="mr-4 w-24 flex flex-row font-light text-xl text-gray-400">
+                <div>Support</div>
+                <div className="text-2xl pt-1 ml-1"><IoIosArrowForward/></div>
+              </div>
+              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-200">
                 <div><SiLogmein/></div>
                 <div><SiTeamviewer/></div>
                 <div><MdHeadsetMic/></div>
               </div>
             </div>
             
-            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-32">
-              <div className="mr-4 w-24 font-light text-xl text-gray-600">Adobe</div>
-              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-500">
+            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-r border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-32">
+              <div className="mr-4 w-24 flex flex-row font-light text-xl text-gray-400">
+                <div>Adobe</div>
+                <div className="text-2xl pt-1 ml-1"><IoIosArrowForward/></div>
+              </div>
+              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-200">
                 <div><SiAdobephotoshop/></div>
                 <div><SiAdobeillustrator/></div>
               </div>
             </div>
 
-            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-l border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-32">
-              <div className="mr-4 w-24 font-light text-xl text-gray-600">Hosting</div>
-              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-500">
+            <div className="flex flex-row-reverse flex-1 auto rounded-r-full items-center text-right py-1 border-r border-t border-b border-blue-600 bg-gray-800 transition duration-700 ease-in-out transform -translate-x-64 hover:bg-gray-700 hover:-translate-x-32">
+              <div className="mr-4 w-24 flex flex-row font-light text-xl text-gray-400">
+                <div>Hosting</div>
+                <div className="text-2xl pt-1 ml-1"><IoIosArrowForward/></div>
+              </div>
+              <div className="mr-12 w-64 flex flex-row-reverse space-x-reverse space-x-4 text-4xl text-gray-200">
                 <div><SiVmware/></div>
                 <div><SiDocker/></div>
               </div>
