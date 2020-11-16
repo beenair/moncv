@@ -2,6 +2,7 @@ import './tailwind.output.css'
 import Header from './Components/header'
 import Skills from './Components/skills'
 import Experiences from './Components/experiences';
+import Formation from './Components/formation'
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
 
       {/* FORMATION */}
       <div className="bg-gray-700 h-screen">
-        
+        <Formation/>
       </div>
 
       {/* HOBBIES */}
