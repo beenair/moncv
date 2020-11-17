@@ -1,50 +1,30 @@
 import './tailwind.output.css'
-import Header from './Components/header'
-import Skills from './Components/skills'
-import Experiences from './Components/experiences';
-import Formation from './Components/formation'
+import Landing from './Components/landing';
+import Admin from './Components/admin';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
+
 
 function App() {
   return (
 
-    <div className="grid gap-12 bg-gray-900">
+    <Router>
 
-      {/* ENTETE */}
-      <div className="bg-gray-800">
-        <Header/>
-      </div>
+        <Switch>
+          <Route path="/admin">
+            <Admin />
+          </Route>
+          <Route path="/">
+            <Landing />
+          </Route>
+        </Switch>
 
-      {/* SKILLS */}
-      <div className="bg-gray-900">
-        <Skills/>
-      </div>
-
-      {/* PARCOURS */}
-      <div className="bg-gray-800">
-        <Experiences/>
-      </div>
-
-      {/* FORMATION */}
-      <div className="bg-gray-700 h-screen">
-        <Formation/>
-      </div>
-
-      {/* HOBBIES */}
-      <div className="bg-gray-800 h-screen">
+      <div>
         
+
       </div>
 
-      {/* PORTFOLIO */}
-      <div className="bg-gray-700 h-screen hidden">
-        
-      </div>
-
-      {/* FORMULAIRE CONTACT */}
-      <div className="bg-gray-700 h-screen">
-        
-      </div>
-
-    </div>
+    </Router>
 
   );
 }
