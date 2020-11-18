@@ -15,39 +15,50 @@ export default class AdminInfo extends Component {
         </div>
 
         {/* Formulaire */}
-        <div>
+        <div className="w-auto">
 
-          <form>
+          <form className="mt-6 p-2 border-2 border-gray-400">
 
-            <div>
-              <label>Nom :</label>
-              <input></input>
-              <label>Prenom :</label>
-              <input></input>
-              <label>Date de naissance :</label>
-              <input></input>
-            </div>
+                
+                  <label>Nom :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
 
-            <div>
-              <label>Email :</label>
-              <input></input>
-              <label>Téléphone :</label>
-              <input></input>
-            </div>
+              
+                  <label>Prenom :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
 
-            <div>
-              <label>Numéro :</label>
-              <input></input>
-              <label>Voie :</label>
-              <input></input>
-            </div>
 
-            <div>
-              <label>Code postale :</label>
-              <input></input>
-              <label>Ville :</label>
-              <input></input>
-            </div>
+                  <label>Date de naissance :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+
+
+                  <label>Permis :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+
+
+                  <label>Email :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+
+
+                  <label>Téléphone :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+ 
+
+                  <label>Numéro :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+                
+
+                  <label>Voie :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+
+
+                  <label>Code postale :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+                
+
+                  <label>Ville :</label>
+                  <input className="px-1 border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+
 
           </form>
 
