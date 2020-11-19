@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {FaReact, FaSymfony,FaHtml5,FaCss3Alt,FaBootstrap,FaPhp,FaJava,FaPython,FaGithub} from 'react-icons/fa'
+import {FaReact, FaSymfony,FaHtml5,FaCss3Alt,FaBootstrap,FaPhp,FaJava,FaPython,FaGithub,FaWordpress} from 'react-icons/fa'
 import {SiJquery,SiMysql,SiMariadb,SiOracle,SiMicrosoftaccess,SiTailwindcss,SiJavascript,SiCsharp} from 'react-icons/si'
 import {DiGit} from 'react-icons/di'
 import {IoIosArrowBack} from 'react-icons/io'
@@ -54,7 +54,7 @@ export default class DevSkills extends Component{
           </div>
 
           <div className="flex flex-row flex-1 rounded-l-full items-center py-1 border-l border-t border-b border-blue-600 bg-gray-800 
-                          transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-12">
+                          transition duration-700 ease-in-out transform translate-x-64 hover:bg-gray-700 hover:translate-x-px">
             <div className="flex flex-row font-light text-xl text-gray-400">
               <div className="flex-initial text-2xl pt-1">
                 <div className="w-6"><IoIosArrowBack/></div>
@@ -68,6 +68,7 @@ export default class DevSkills extends Component{
               <div><FaCss3Alt/></div>
               <div><FaBootstrap/></div>
               <div><SiTailwindcss/></div>
+              <div><FaWordpress/></div>
             </div>
           </div>
           
