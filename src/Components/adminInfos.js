@@ -6,13 +6,13 @@ export default class AdminInfo extends Component {
 
 
   state = {
-      infosGenerales: []
+      infosGenerales: [],
   }
 
 
   componentDidMount() {
-    axios.get(`https://cv.beenair.fr/admin/profil.php`).then(res=>{
-      console.log(res);
+
+    axios.get(`https://cv.beenair.fr/profil.php`).then(res=>{
       this.setState({infosGenerales : res.data});
     })
   }
@@ -37,7 +37,7 @@ export default class AdminInfo extends Component {
 
               <div className="flex flex-col">
                 <label>Nom :</label>
-                <input type="text"className="px-1 h-8 rounded-md border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+    <input type="text"className="px-1 h-8 rounded-md border-2 focus:border-2 focus:border-blue-400 focus:outline-none">{}</input>
               </div>
 
               <div className="flex flex-col">
