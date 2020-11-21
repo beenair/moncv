@@ -20,24 +20,26 @@ export default class Admin extends Component {
     return(
 
 
-        <div className="h-screen">
+        <div className="h-screen w-full relative">
 
 
             {/* HEADER */}
-            <div className="h-16 px-2 flex flex-row items-center space-x-2 text-xl text-white font-semibold bg-blue-600">
+            <div className="fixed top-0 h-16 w-full px-2 flex flex-row items-center space-x-2 text-xl text-white font-semibold bg-blue-600">
               <div className="flex-initial"><GoSettings/></div>
               <div className="flex-1">Portail d'aministration</div>
               <div className="flex-initial"> <Link to='/'> <AiFillHome/> </Link> </div>
             </div>
 
             {/* PAGE */}
-            <div className="h-full flex flex-row">
+            <div className="mt-16 w-full min-h-full flex flex-row">
 
               {/* Menu latéral */}
-              <AdminMenu/>
+              <div className="fixed left-0 h-full w-48 px-2 py-4 bg-blue-300">
+                <AdminMenu/>
+              </div>
 
               {/* Contenu */}
-              <div className="w-full h-full bg-gray-300">
+              <div className="w-full min-h-full ml-48 bg-gray-300">
 
                 <Switch>
 

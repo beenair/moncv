@@ -9,7 +9,7 @@ export default class AdminMenu extends Component{
     
     return(
   
-      <div className="flex flex-col gap-4 w-48 px-2 py-4 bg-blue-300">
+      <div className="flex flex-col gap-4">
 
         <div className="flex flex-row space-x-2 items-center">
           <div><FaUser/></div>
