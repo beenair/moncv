@@ -8,6 +8,7 @@ import AdminExperience from './adminExperience'
 import AdminFormation from './adminFormation'
 import AdminHobbies from './adminHobbies'
 import AdminPortfolio from './adminPortfolio'
+import AdminTest from './adminTest'
 
 import {GoSettings} from 'react-icons/go'
 import {AiFillHome} from 'react-icons/ai'
@@ -65,6 +66,10 @@ export default class Admin extends Component {
 
                   <Route path="/admin/portfolio">
                     <AdminPortfolio/>
+                  </Route>
+
+                  <Route path="/admin/test">
+                    <AdminTest/>
                   </Route>
 
                 </Switch>

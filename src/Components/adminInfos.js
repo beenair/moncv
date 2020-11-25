@@ -15,12 +15,15 @@ export default class AdminInfo extends Component {
 
     axios.get(`https://cv.beenair.fr/profil.php`)
     .then(res=>{
+      console.log(res.data);
       this.setState({Profil : res.data});
     })
   }
 
 
+
   render(){
+
 
     return(
 
@@ -44,7 +47,7 @@ export default class AdminInfo extends Component {
 
               <div className="flex flex-col">
                 <label className="px-1">Nom :</label>
-                <input type="text" value={this.state.Profil.nom} onChange={this.handleChange} className="px-1 h-8 text-gray-600 rounded-md border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
+                <input type="text" value={this.state.Profil.nom} className="px-1 h-8 text-gray-600 rounded-md border-2 focus:border-2 focus:border-blue-400 focus:outline-none"></input>
               </div>
 
               <div className="flex flex-col">

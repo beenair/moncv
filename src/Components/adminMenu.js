@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import {FaUser,FaIndustry,FaAward,FaBasketballBall} from 'react-icons/fa';
 import {IoIosStats,IoMdSchool} from 'react-icons/io';
+import {GrTest} from 'react-icons/gr'
 
 
 export default class AdminMenu extends Component{
@@ -34,6 +35,10 @@ export default class AdminMenu extends Component{
         <div className="flex flex-row space-x-2 items-center">
           <div><FaAward/></div>
           <div><Link to='/admin/portfolio'>Porfolio</Link></div>
+        </div>
+        <div className="flex flex-row space-x-2 items-center">
+          <div><GrTest/></div>
+          <div><Link to='/admin/test'>Test</Link></div>
         </div>
 
       </div>
