@@ -1,26 +1,8 @@
-import React, { Component } from 'react'
-import axios from 'axios'
+import React from 'react'
 
 
-export default class Presentation extends Component {
+export default function Presentation(props) {
 
-
-  state = {
-    infosProfil: [],
-  }
-
-
-
-  componentDidMount() {
-
-    axios.get(`https://cv.beenair.fr/profil.php`)
-    .then(res=>{
-      this.setState({infosProfil : res.data});
-    })
-  }
-
-
-  render(){
 
     return(
 
@@ -32,11 +14,11 @@ export default class Presentation extends Component {
 
 
         <div>
-          {this.state.infosProfil.presentation}
+          {props.presentation}
         </div>
 
       </div>
 
     );
-  }
+
 }
