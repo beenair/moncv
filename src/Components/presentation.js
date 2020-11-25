@@ -1,7 +1,24 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 
 export default class Presentation extends Component {
+
+
+  state = {
+    infosProfil: [],
+  }
+
+
+
+  componentDidMount() {
+
+    axios.get(`https://cv.beenair.fr/profil.php`)
+    .then(res=>{
+      this.setState({infosProfil : res.data});
+    })
+  }
+
 
   render(){
 
@@ -15,7 +32,7 @@ export default class Presentation extends Component {
 
 
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nobis, magnam obcaecati suscipit repellat vel impedit architecto odit nesciunt! Eveniet voluptatibus, voluptates ad possimus quidem quos expedita ducimus aliquam cum illum neque enim itaque, perspiciatis voluptatum nulla voluptate voluptas assumenda. Magni impedit ex ea! Eligendi ea temporibus odio similique officiis!
+          {this.state.infosProfil.presentation}
         </div>
 
       </div>

@@ -1,6 +1,24 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 
 export default class InfosGenerales extends Component{
+
+
+  state = {
+    infosProfil: [],
+  }
+
+
+
+  componentDidMount() {
+
+    axios.get(`https://cv.beenair.fr/profil.php`)
+    .then(res=>{
+      this.setState({infosProfil : res.data});
+    })
+  }
+
+
 
   render(){    
 
@@ -10,26 +28,28 @@ export default class InfosGenerales extends Component{
 
         {/* Nom, Prenom */}
         <div className="text-3xl">
-          Benjamin THOMAS
+          {this.state.infosProfil.nom} {this.state.infosProfil.prenom}
         </div>
 
         {/* Date de naissance */}
         <div>
-          8 Aout 1986
+          {this.state.infosProfil.date_naissance}
         </div>
 
         {/* Telephone */}
         <div>
-          0612345678
+          {this.state.infosProfil.telephone}
         </div>
 
         {/* Mail */}
         <div>
-          test@bla.fr
+          {this.state.infosProfil.mail}
         </div>
 
       </div>
 
     );
   }
-  }
+
+
+}
