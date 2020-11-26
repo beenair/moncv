@@ -9,11 +9,11 @@ function App() {
   return (
 
         <Switch>
+          <Route exact path="/">
+            <Landing />
+          </Route>
           <Route path="/admin">
             <Admin />
-          </Route>
-          <Route path="/" exact>
-            <Landing />
           </Route>
         </Switch>
 
