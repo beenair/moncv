@@ -1,6 +1,6 @@
 import {HiUser, HiPhone} from 'react-icons/hi'
 import {GoMortarBoard, GoCloudDownload} from 'react-icons/go'
-import {GiSuitcase ,GiSoccerBall} from 'react-icons/gi'
+import {GiSuitcase ,GiSoccerBall,GiMuscleUp} from 'react-icons/gi'
 import {CgBee} from 'react-icons/cg'
 import {Link} from 'react-router-dom'
 
@@ -17,7 +17,7 @@ export default function Menu(){
       {/* Liens */}
       <div className="flex flex-1 flex-col gap-5 place-content-center place-items-center">
         <Link to='/profil' className="transform duration-500 hover:scale-150"> <HiUser/> </Link>
-        <Link to='/skills' className="transform duration-500 hover:scale-150"> <HiUser/> </Link>
+        <Link to='/skills' className="transform duration-500 hover:scale-150"> <GiMuscleUp/> </Link>
         <Link to='/contact' className="transform duration-500 hover:scale-150"> <HiPhone/> </Link>
         <Link to='/parcours' className="transform duration-500 hover:scale-150"> <GiSuitcase/> </Link>
         <Link to='/formation' className="transform duration-500 hover:scale-150"> <GoMortarBoard/> </Link>
