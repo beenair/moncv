@@ -1,23 +1,27 @@
 import './tailwind.output.css'
-import Landing from './Components/landing';
-import Admin from './Components/admin';
-import {Switch, Route} from 'react-router-dom';
+import Home from './Components/home';
+import Admin from './Components/admin/admin';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 
-function App() {
+export default function App() {
   return (
 
-        <Switch>
-          <Route exact path="/">
-            <Landing />
-          </Route>
-          <Route path="/admin">
-            <Admin />
-          </Route>
-        </Switch>
+    <Router>
+
+      <Switch>
+        <div className="bg-gray-300">
+            <Route path="/">
+              <Home />
+            </Route>
+            <Route exact path="/admin">
+              <Admin />
+            </Route>
+        </div>
+      </Switch>
+
+    </Router>
 
   );
 }
-
-export default App;
