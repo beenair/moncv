@@ -7,12 +7,12 @@ export default function Presentation(props) {
     return(
 
       <div>
-        
+        {/* Titre */}
         <div className="text-3xl">
-          Présentation
+          A propos
         </div>
 
-
+        {/* Texte présentation */}
         <div>
           {props.presentation}
         </div>

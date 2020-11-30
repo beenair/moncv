@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 import DevSkills from './devSkills'
 import ItSkills from './itSkills'
-import SoftSkills from './softSkills'
+// import SoftSkills from './softSkills'
 
 
-export default class Skills extends Component {
+export default function Skills(){
 
-  render(){
+  
 
     return(
       
-      <div className="bg-gray-900 border-t border-gray-900 grid grid-cols gap-16">
+      <div className="grid grid-cols-2 mt-10">
 
         {/* Dev Skills */}
         <div className="">
-          <DevSkills/>          
+          <DevSkills/>
         </div>
 
         {/* IT Skills */}
@@ -23,13 +23,13 @@ export default class Skills extends Component {
         </div>
 
         {/* Soft Skills */}
-        <div className="">
-          <SoftSkills/>
+        <div className="h-64 col-span-2 bg-green-600">
+          
         </div>
         
       </div>
 
 
     );
-  }
+
 }

@@ -28,6 +28,10 @@ export default class Header extends Component{
         presentation = {this.state.Profil.presentation}
         mail = {this.state.Profil.mail}
         telephone = {this.state.Profil.telephone}
+        codepostale = {this.state.Profil.adresse_code_postale}
+        ville = {this.state.Profil.adresse_ville}
+        permis = {this.state.Profil.permis}
+        vehicule = {this.state.Profil.vehicule}
       />
     );
   }

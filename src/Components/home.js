@@ -1,12 +1,13 @@
 import Menu from './menu';
 import Header from './header'
+import Skills from './skills'
 
 
 export default function Home() {
 
   return (
 
-    <div className="grid pt-24 w-3/4 min-h-screen m-auto max-w-screen-xl">
+    <div className="grid py-20 w-3/4 min-h-screen m-auto max-w-screen-xl">
 
       {/* SidebarLeft */}
       <div className="w-16 h-screen fixed left-0 top-0 bg-gray-900">
@@ -18,6 +19,11 @@ export default function Home() {
         {/* Header */}
         <div>
           <Header/>
+        </div>
+
+        {/* Skills */}
+        <div>
+          <Skills/>
         </div>
       </div>
 

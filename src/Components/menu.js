@@ -16,16 +16,16 @@ export default function Menu(){
       </div>
       {/* Liens */}
       <div className="flex flex-1 flex-col gap-5 place-content-center place-items-center">
-        <Link to='/profil' className="transform duration-500 hover:scale-150"> <HiUser/> </Link>
-        <Link to='/skills' className="transform duration-500 hover:scale-150"> <GiMuscleUp/> </Link>
-        <Link to='/contact' className="transform duration-500 hover:scale-150"> <HiPhone/> </Link>
-        <Link to='/parcours' className="transform duration-500 hover:scale-150"> <GiSuitcase/> </Link>
-        <Link to='/formation' className="transform duration-500 hover:scale-150"> <GoMortarBoard/> </Link>
-        <Link to='/hobbies' className="transform duration-500 hover:scale-150"> <GiSoccerBall/> </Link>
+        <Link to='/profil' className="transform duration-500 hover:scale-125"> <HiUser/> </Link>
+        <Link to='/skills' className="transform duration-500 hover:scale-125"> <GiMuscleUp/> </Link>
+        <Link to='/parcours' className="transform duration-500 hover:scale-125"> <GiSuitcase/> </Link>
+        <Link to='/formation' className="transform duration-500 hover:scale-125"> <GoMortarBoard/> </Link>
+        <Link to='/hobbies' className="transform duration-500 hover:scale-125"> <GiSoccerBall/> </Link>
+        <Link to='/contact' className="transform duration-500 hover:scale-125"> <HiPhone/> </Link>
       </div>
       {/* Download */}
       <div className="h-16 flex place-content-center place-items-center">
-        <Link to='/download' className="transform duration-500 hover:scale-150"> <GoCloudDownload/> </Link>
+        <Link to='/download' className="transform duration-500 hover:scale-125"> <GoCloudDownload/> </Link>
       </div>
     </div>
 
