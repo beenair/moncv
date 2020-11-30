@@ -1,15 +1,13 @@
 import React,{Component} from 'react';
 
-export default class SoftSkills extends Component {
+export default function SoftSkills() {
 
-  render(){
 
     return(
 
-      <div className="bg-black h-64">
+      <div className="">
 
       </div>
 
     );
-  }
 }

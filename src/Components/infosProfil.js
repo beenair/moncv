@@ -28,21 +28,20 @@ export default function InfosProfil(props){
 
         {/* Presentation et photo */}
         <div className="h-auto grid grid-cols-2 md:flex md:flex-row gap-3 p-3">
+          {/* Photo */}
+          <div className="w-1/3 border-8 border-gray-200">
+            <img src={Photo} alt="moi"/>
+          </div>
           {/* Presentation */}
-          <div className="w-2/3">
+          <div className="w-2/3 flex flex-col self-end">
             {/* Titre */}
-            <div className="text-3xl font-semibold">
+            <div className="text-2xl font-semibold">
               A propos
             </div>
-
             {/* Texte présentation */}
-            <div className="mt-3 text-2xl font-ligth text-gray-700">
+            <div className="mt-3 text-xl font-ligth text-gray-700">
               {props.presentation}
             </div>
-          </div>
-          {/* Photo */}
-          <div className="w-1/3">
-            <img src={Photo} alt="Maphoto"/>
           </div>
         </div>
 
@@ -55,7 +54,7 @@ export default function InfosProfil(props){
             <div className="text-3xl text-yellow-600">
               <FaMapMarkerAlt/>
             </div>
-            <div className="text-gray-300 text-base font-light text-center">
+            <div className="text-gray-500 text-base font-light text-center">
               {props.codepostale} <br/>
               {props.ville}
             </div>
@@ -65,7 +64,7 @@ export default function InfosProfil(props){
             <div className="text-3xl text-yellow-600">
               <AiFillCar/>
             </div>
-            <div className="text-gray-300 text-base font-light text-center">
+            <div className="text-gray-500 text-base font-light text-center">
               {props.permis} <br/>
               {props.vehicule}
             </div>
@@ -75,7 +74,7 @@ export default function InfosProfil(props){
             <div className="text-3xl text-yellow-600">
               <MdPermContactCalendar/>
             </div>
-            <div className="text-gray-300 text-base font-light text-center">
+            <div className="text-gray-500 text-base font-light text-center">
               {props.telephone} <br/>
               {props.mail}
             </div>
