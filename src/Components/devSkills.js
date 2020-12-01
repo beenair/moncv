@@ -8,45 +8,52 @@ export default function DevSkills(){
   
     return(
 
+             
+      <div className="grid grid-cols-2 gap-2 p-3">
 
-      <div className="flex flex-col p-3">
-
-        <div className="text-3xl font-bold text-yellow-600">
-          Développement informatique
+        <div className="col-span-2 text-3xl font-light text-yellow-600 text-center bg-gray-700 rounded-lg">
+          Développement
         </div>
 
-        
-          {/* Bases de données */}
-          <div className="text-xl font-base mt-4">
-            Bases de données :
+        {/* Langages */}
+        <div className="bg-gray-400 rounded-lg px-2 pb-2">
+          <div className="text-xl font-baset mt-2">
+            Langages :
           </div>
 
           <div className="text-2xl text-gray-700 flex flex-col gap-2 mt-2 ml-2">
             <div className="flex flex-row gap-3 items-center">
-              <div><SiMysql/></div>
-              <div className="text-base">MySQL</div>
+              <div><FaPhp/></div>
+              <div className="text-base">PHP</div>
             </div>
 
             <div className="flex flex-row gap-3 items-center">
-              <div><SiMariadb/></div>
-              <div className="text-base">Maria DB</div>
+              <div><SiJavascript/></div>
+              <div className="text-base">JavaScript</div>
             </div>
 
             <div className="flex flex-row gap-3 items-center">
-              <div><SiOracle/></div>
-              <div className="text-base">Oracle</div>
+              <div><FaPython/></div>
+              <div className="text-base">Python</div>
             </div>
 
             <div className="flex flex-row gap-3 items-center">
-              <div><SiMicrosoftaccess/></div>
-              <div className="text-base">Microsoft Access</div>
+              <div><SiCsharp/></div>
+              <div className="text-base">C Sharp</div>
             </div>
-            
+
+            <div className="flex flex-row gap-3 items-center">
+              <div><FaJava/></div>
+              <div className="text-base">JAVA</div>
+            </div>
           </div>
+        </div>
+        
 
 
-          {/* Intégration */}
-          <div className="text-xl font-baset mt-4">
+        {/* Intégration */}
+        <div className="bg-gray-400 rounded-lg px-2 pb-2">
+          <div className="text-xl font-baset mt-2">
             Intégration web :
           </div>
 
@@ -77,43 +84,44 @@ export default function DevSkills(){
             </div>
 
           </div>
+        </div>
 
 
-          {/* Langages */}
-          <div className="text-xl font-baset mt-4">
-            Langages de programamtion :
+        {/* Bases de données */}
+        <div className="bg-gray-400 rounded-lg px-2 pb-2">
+          <div className="text-xl font-base mt-2">
+            Bases de données :
           </div>
 
           <div className="text-2xl text-gray-700 flex flex-col gap-2 mt-2 ml-2">
             <div className="flex flex-row gap-3 items-center">
-              <div><FaPhp/></div>
-              <div className="text-base">PHP</div>
+              <div><SiMysql/></div>
+              <div className="text-base">MySQL</div>
             </div>
 
             <div className="flex flex-row gap-3 items-center">
-              <div><SiJavascript/></div>
-              <div className="text-base">JavaScript</div>
+              <div><SiMariadb/></div>
+              <div className="text-base">Maria DB</div>
             </div>
 
             <div className="flex flex-row gap-3 items-center">
-              <div><FaPython/></div>
-              <div className="text-base">Python</div>
+              <div><SiOracle/></div>
+              <div className="text-base">Oracle</div>
             </div>
 
             <div className="flex flex-row gap-3 items-center">
-              <div><SiCsharp/></div>
-              <div className="text-base">C Sharp</div>
+              <div><SiMicrosoftaccess/></div>
+              <div className="text-base">Microsoft Access</div>
             </div>
-
-            <div className="flex flex-row gap-3 items-center">
-              <div><FaJava/></div>
-              <div className="text-base">JAVA</div>
-            </div>
+            
           </div>
 
+        </div>
 
-          {/* Librairies - Frameworks */}
-          <div className="text-xl font-baset mt-4">
+
+        {/* Librairies - Frameworks */}
+        <div className="bg-gray-400 rounded-lg px-2 pb-2">
+          <div className="text-xl font-baset mt-2">
             Librairies - Frameworks :
           </div>
 
@@ -133,11 +141,13 @@ export default function DevSkills(){
               <div className="text-base">JQuery</div>
             </div>
           </div>
+        </div>
 
 
 
-          {/* Versionning */}
-          <div className="text-xl font-baset mt-4">
+        {/* Versionning */}
+        <div className="bg-gray-400 rounded-lg px-2 pb-2">
+          <div className="text-xl font-baset mt-2">
             Versionning :
           </div>
 
@@ -152,6 +162,7 @@ export default function DevSkills(){
               <div className="text-base">GitHub</div>
             </div>
           </div>
+        </div>
 
 
       </div>

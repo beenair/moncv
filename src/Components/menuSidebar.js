@@ -5,7 +5,7 @@ import {GiSuitcase ,GiSoccerBall,GiMuscleUp} from 'react-icons/gi'
 import {CgBee} from 'react-icons/cg'
 import {Link} from 'react-router-dom'
 
-export default function Menu(){
+export default function MenuSidebar(){
 
   return(
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import DevSkills from './devSkills'
 import ItSkills from './itSkills'
-// import SoftSkills from './softSkills'
+import SoftSkills from './softSkills'
 
 
 export default function Skills(){
@@ -10,21 +10,21 @@ export default function Skills(){
 
     return(
       
-      <div className="grid grid-cols-2 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-10">
 
         {/* Dev Skills */}
-        <div className="">
+        <div>
           <DevSkills/>
         </div>
 
         {/* IT Skills */}
-        <div className="">
+        <div>
           <ItSkills/>
         </div>
 
         {/* Soft Skills */}
-        <div className="h-64 col-span-2 bg-green-600">
-          
+        <div className="md:col-span-2 mt-6">
+          <SoftSkills/>
         </div>
         
       </div>

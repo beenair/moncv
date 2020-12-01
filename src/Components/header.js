@@ -13,7 +13,6 @@ export default class Header extends Component{
 
     axios.get(`https://cv.beenair.fr/profil.php`)
     .then(res=>{
-      console.log(res.data);
       this.setState({Profil : res.data});
     })
   }
@@ -32,6 +31,7 @@ export default class Header extends Component{
         ville = {this.state.Profil.adresse_ville}
         permis = {this.state.Profil.permis}
         vehicule = {this.state.Profil.vehicule}
+        mobilite = {this.state.Profil.mobilite}
       />
     );
   }
