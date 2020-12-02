@@ -32,7 +32,7 @@ export default function InfosProfil(props){
 
 
         {/* Presentation et photo */}
-        <div className="h-auto flex flex-col md:flex-row gap-3 md:p-3">
+        <div className="h-auto flex flex-col md:flex-row gap-3 md:p-3" id="apropos">
           {/* Photo */}
           <div className="md:w-1/3 md:border-8 border-gray-200">
             <img src={Photo} alt="moi"/>

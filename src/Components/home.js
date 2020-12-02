@@ -19,12 +19,12 @@ export default function Home() {
     {/* Content */}
     <div className="shadow-2xl flex flex-col">
       {/* Header */}
-      <div>
+      <div id="header">
         <Header/>
       </div>
 
       {/* Skills */}
-      <div>
+      <div id="skills">
         <Skills/>
       </div>
     </div>

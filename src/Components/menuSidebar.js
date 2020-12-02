@@ -3,7 +3,7 @@ import {FaPenAlt} from 'react-icons/fa'
 import {GoMortarBoard, GoCloudDownload} from 'react-icons/go'
 import {GiSuitcase ,GiSoccerBall,GiMuscleUp} from 'react-icons/gi'
 import {CgBee} from 'react-icons/cg'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
 
 export default function MenuSidebar(){
 
@@ -17,8 +17,8 @@ export default function MenuSidebar(){
       </div>
       {/* Liens */}
       <div className="flex flex-1 flex-col gap-5 place-content-center place-items-center">
-        <Link to='/profil' className="transform duration-500 hover:scale-125"> <HiUser/> </Link>
-        <Link to='/skills' className="transform duration-500 hover:scale-125"> <GiMuscleUp/> </Link>
+        <Link to='apropos' smooth={true} duration={1000}  className="transform duration-500 hover:scale-125"> <HiUser/> </Link>
+        <Link to='skills' smooth={true} duration={1000} className="transform duration-500 hover:scale-125"> <GiMuscleUp/> </Link>
         <Link to='/parcours' className="transform duration-500 hover:scale-125"> <GiSuitcase/> </Link>
         <Link to='/formation' className="transform duration-500 hover:scale-125"> <GoMortarBoard/> </Link>
         <Link to='/hobbies' className="transform duration-500 hover:scale-125"> <GiSoccerBall/> </Link>
