@@ -1,6 +1,7 @@
 import Menu from './menuSidebar'
 import Header from './header'
 import Skills from './skills'
+import Experiences from './experiences'
 
 
 export default function Home() {
@@ -26,6 +27,11 @@ export default function Home() {
       {/* Skills */}
       <div id="skills">
         <Skills/>
+      </div>
+
+      {/* Experiences */}
+      <div id="parcours">
+        <Experiences/>
       </div>
     </div>
 

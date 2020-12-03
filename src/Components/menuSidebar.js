@@ -19,7 +19,7 @@ export default function MenuSidebar(){
       <div className="flex flex-1 flex-col gap-5 place-content-center place-items-center">
         <Link to='apropos' smooth={true} duration={1000}  className="transform duration-500 hover:scale-125"> <HiUser/> </Link>
         <Link to='skills' smooth={true} duration={1000} className="transform duration-500 hover:scale-125"> <GiMuscleUp/> </Link>
-        <Link to='/parcours' className="transform duration-500 hover:scale-125"> <GiSuitcase/> </Link>
+        <Link to='parcours' smooth={true} duration={1000} className="transform duration-500 hover:scale-125"> <GiSuitcase/> </Link>
         <Link to='/formation' className="transform duration-500 hover:scale-125"> <GoMortarBoard/> </Link>
         <Link to='/hobbies' className="transform duration-500 hover:scale-125"> <GiSoccerBall/> </Link>
         <Link to='/contact' className="transform duration-500 hover:scale-125"> <FaPenAlt/> </Link>

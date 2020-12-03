@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import axios from 'axios';
 
 
-export default class AdminInfo extends Component {
+export default class AdminInfos extends Component {
 
 
   state = {

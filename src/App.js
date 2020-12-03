@@ -12,7 +12,7 @@ export default function App() {
 
       <Switch>
         <div className="bg-gray-300">
-            <Route path="/">
+            <Route exact path="/">
               <Home />
             </Route>
             <Route exact path="/admin">

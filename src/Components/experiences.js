@@ -17,10 +17,14 @@ export default class Experiences extends Component{
 
     return(
 
-      <div className ="grid gap-8">
+      <div className ="grid gap-8 px-3">
+
+        <div className="text-5xl font-semibold text-center">
+          Parcours :
+        </div>
 
         {/* Entreprise */}
-        <div className="h-24 bg-black w-4/6 m-auto relative z-0">
+        <div className="h-24 w-full m-auto relative z-0">
           <div className="h-20 mt-2 flex flex-row items-center rounded-l-full rounded-r-full bg-gray-600">
             {/* Dates */}
             <div classname="flex-initial">

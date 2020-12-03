@@ -2,7 +2,7 @@ import React, { Component }from 'react';
 import {Switch,Route,Link} from 'react-router-dom'
 
 import AdminMenu from './adminMenu'
-import AdminInfo from './adminInfos'
+import AdminInfos from './adminInfos'
 import AdminSkills from './adminSkills'
 import AdminExperience from './adminExperience'
 import AdminFormation from './adminFormation'
@@ -44,8 +44,8 @@ export default class Admin extends Component {
 
                 <Switch>
 
-                  <Route path="/admin/infos">
-                    <AdminInfo/>
+                  <Route exact path="/admin/infos">
+                    <AdminInfos/>
                   </Route>
 
                   <Route path="/admin/skills">
