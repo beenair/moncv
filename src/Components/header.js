@@ -5,7 +5,7 @@ import axios from 'axios'
 export default class Header extends Component{
 
   state = {
-    Profil: [],
+    Profil: []
   }
 
 

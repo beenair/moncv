@@ -15,7 +15,7 @@ export default function MenuTop() {
 
       {/* Titre */}
       <div className="flex-grow">
-
+        MonCV
       </div>
 
       {/* Bouton burger menu */}

@@ -48,27 +48,27 @@ export default class Admin extends Component {
                     <AdminInfos/>
                   </Route>
 
-                  <Route path="/admin/skills">
+                  <Route exact path="/admin/skills">
                     <AdminSkills/>
                   </Route>
 
-                  <Route path="/admin/experiences">
+                  <Route exact path="/admin/experiences">
                     <AdminExperience/>
                   </Route>
 
-                  <Route path="/admin/formation">
+                  <Route exact path="/admin/formation">
                     <AdminFormation/>
                   </Route>
 
-                  <Route path="/admin/loisirs">
+                  <Route exact path="/admin/loisirs">
                     <AdminHobbies/>
                   </Route>
 
-                  <Route path="/admin/portfolio">
+                  <Route exact path="/admin/portfolio">
                     <AdminPortfolio/>
                   </Route>
 
-                  <Route path="/admin/test">
+                  <Route exact path="/admin/test">
                     <AdminTest/>
                   </Route>
 

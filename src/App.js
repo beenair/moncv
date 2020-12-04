@@ -1,3 +1,4 @@
+import React from 'react'
 import './tailwind.output.css'
 import Home from './Components/home';
 import Admin from './Components/admin/admin';
@@ -10,16 +11,16 @@ export default function App() {
 
     <Router>
 
-      <Switch>
         <div className="bg-gray-300">
+          <Switch>
             <Route exact path="/">
               <Home />
             </Route>
             <Route exact path="/admin">
               <Admin />
             </Route>
+          </Switch>
         </div>
-      </Switch>
 
     </Router>
 

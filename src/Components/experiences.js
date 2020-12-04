@@ -1,73 +1,45 @@
-import React,{Component} from 'react';
-import {TiArrowSortedDown,TiArrowSortedUp} from 'react-icons/ti'
+import React from 'react';
 
-export default class Experiences extends Component{
 
-  state = {
-    show : false
-  }
+export default function Experience(props) {
 
-  montrerMissions = ()=>{
-    this.setState({
-      show : !this.state.show  
-    })
-  }
+  return(
 
-  render(){
+    <section>
 
-    return(
-
-      <div className ="grid gap-8 px-3">
-
-        <div className="text-5xl font-semibold text-center">
-          Parcours :
+      {/* Exprerience */}
+      <div className="h-24 w-full m-auto relative z-0 border-2">
+        <div className="h-20 mt-2 flex flex-row items-center rounded-l-full rounded-r-full bg-gray-600">
+          {/* Dates */}
+          <div className="flex-initial">
+            <div className="w-24 text-center text-base">
+              {props.dateFin !== props.dateDebut ? <div>{props.dateFin}</div>  : null}
+              {props.dateDebut}
+            </div>
+          </div>
+          {/* Titre */}
+          <div className="flex-1 px-2">
+            <div className="ml-32 text-xl">
+              {props.titre}
+              </div>
+          </div>
+          {/* Fleche deroulement */}
+          <div className="flex-initial">
+            <div className="w-16 text-4xl cursor-pointer">
+              
+            </div>
+          </div>
         </div>
 
         {/* Entreprise */}
-        <div className="h-24 w-full m-auto relative z-0">
-          <div className="h-20 mt-2 flex flex-row items-center rounded-l-full rounded-r-full bg-gray-600">
-            {/* Dates */}
-            <div classname="flex-initial">
-              <div className="w-24 text-center">Dates</div>
-            </div>
-            {/* Titre */}
-            <div className="flex-1">
-              <div className=" ml-32">Titre</div>
-            </div>
-            {/* Fleche deroulement */}
-            <div classname="flex-initial">
-              <div onClick={this.montrerMissions} className="w-16 text-4xl cursor-pointer">
-                {this.state.show ? <TiArrowSortedUp/> : <TiArrowSortedDown/> }
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-full h-24 w-24 z-10 absolute top-0 ml-32 flex items-center justify-center bg-gray-900">
-
-          </div>
-
-
-        {/* Missions */}
-          {this.state.show ? (
-            <div className="bg-gray-400 w-5/6 h-auto m-auto py-4 px-2 rounded-b-xl border-2 border-gray-600">
-              <ul className="space-y-2">
-                <li>Analyse en bases de données et code logiciel.</li>
-                <li>Requeting SQL, migration, sauvegardes, restauration de bases de données</li>
-                <li>Création, mise à jour de procédures</li>
-                <li>Suivi clients grands comptes</li>
-                <li>Déploiement informatique (logiciel, matériel)</li>
-                <li>Formation sur site et à distance</li>
-              </ul>
-            </div>
-          ) : null }
-
-          
-
-
+        <div className="rounded-full h-24 w-24 z-10 absolute top-0 ml-32 text-yellow-600 flex items-center justify-center bg-gray-900">
+          {props.entreprise}
         </div>
 
       </div>
 
-    );
-  }
+    </section>
+
+  );
+
 }

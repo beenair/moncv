@@ -1,7 +1,9 @@
-import Menu from './menuSidebar'
+import MenuSidebar from './menuSidebar'
 import Header from './header'
 import Skills from './skills'
-import Experiences from './experiences'
+import Parcours from './parcours'
+import Formation from './formation'
+import Hobbies from './hobbies'
 
 
 export default function Home() {
@@ -13,14 +15,14 @@ export default function Home() {
 
       {/* Menu Sidebar */}
       <div className="hidden lg:block w-16 h-screen fixed left-0 top-0 bg-gray-900">
-        <Menu/>
+        <MenuSidebar/>
       </div>
 
 
     {/* Content */}
     <div className="shadow-2xl flex flex-col">
       {/* Header */}
-      <div id="header">
+      <div>
         <Header/>
       </div>
 
@@ -31,8 +33,19 @@ export default function Home() {
 
       {/* Experiences */}
       <div id="parcours">
-        <Experiences/>
+        <Parcours/>
       </div>
+
+      {/* Formation */}
+      <div id="formation">
+        <Formation/>
+      </div>
+
+      {/* Loisirs */}
+      <div id="hobbies">
+        <Hobbies/>
+      </div>
+
     </div>
 
 
