@@ -15,7 +15,7 @@ export default class Missions extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://cv.beenair.fr/missions.php')
+    axios.get('https://cv.beenair.fr/missions.php' + this.props.id)
     .then(res=>{
       this.setState({missions : res.data});
     })

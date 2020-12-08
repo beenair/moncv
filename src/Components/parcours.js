@@ -26,6 +26,7 @@ export default class Parcours extends Component {
     const experiences = this.state.experiences.map(exp=>{
       return <Experience 
         key = {exp.id}
+        idExp = {exp.id}
         entreprise = {exp.entreprise}
         titre = {exp.titre}
         dateDebut = {exp.dateDebut}

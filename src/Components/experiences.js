@@ -16,7 +16,8 @@ export default class Experience extends Component{
   
   montrerMissions = ()=>{
     this.setState({
-      show : !this.state.show  
+      show : !this.state.show
+
     })
   }
 
@@ -58,7 +59,7 @@ export default class Experience extends Component{
 
           {/* Missions */}
           { this.state.show ? <Missions
-            id_experience = {this.props.key}
+              id = {this.props.idExp}
             /> 
           : null }
 
