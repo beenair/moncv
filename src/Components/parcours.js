@@ -8,22 +8,16 @@ export default class Parcours extends Component {
 
   state = {
     experiences : [],
-    missions : [],
   }
 
 
   componentDidMount() {
 
-    axios.get('https://cv.beenair.fr/missions.php')
-    .then(res=>{
-      this.setState({missions : res.data});
-    })
-
-
     axios.get('https://cv.beenair.fr/experience.php')
     .then(res=>{
       this.setState({experiences : res.data});
     })
+
   }
 
 
@@ -43,7 +37,7 @@ export default class Parcours extends Component {
 
       <div className="mt-12">
         {/* Titre */}
-        <div className="text-4xl text-center font-semibold">
+        <div className="text-3xl text-center font-semibold">
           Expériences Professionnelles
         </div>
         {/* Expériences */}

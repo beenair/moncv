@@ -17,7 +17,7 @@ export default function InfosProfil(props){
         <div className="h-auto w-full bg-bottom md:p-3" style={{ backgroundImage:`url(${Background})` }}>
           {/* MenuTop */}
           <div className="block lg:hidden">
-            <MenuTop/>
+            <MenuTop />
           </div>
           {/* Nom et Titre */}
           <div className="h-24 md:h-48 flex items-center place-content-center text-yellow-600 text-3xl md:text-5xl font-bold">

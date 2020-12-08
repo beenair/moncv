@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import InfosProfil from "./infosProfil";
+import InfosProfil from './infosProfil';
 import axios from 'axios'
 
 export default class Header extends Component{
@@ -17,22 +17,36 @@ export default class Header extends Component{
     })
   }
 
+  
+
   render(){
+
+    const profil = this.state.Profil.map(profil=>{
+      return <InfosProfil
+        key = {profil.id}
+        nom = {profil.nom}
+        prenom = {profil.prenom}
+        titre = {profil.titre}
+        presentation = {profil.presentation}
+        mail = {profil.mail}
+        telephone = {profil.telephone}
+        codepostale = {profil.adresse_code_postale}
+        ville = {profil.adresse_ville}
+        permis = {profil.permis}
+        vehicule = {profil.vehicule}
+        mobilite = {profil.mobilite}
+      />  
+    }
+    )
     
     return(
-      <InfosProfil
-        nom = {this.state.Profil.nom}
-        prenom = {this.state.Profil.prenom}
-        titre = {this.state.Profil.titre}
-        presentation = {this.state.Profil.presentation}
-        mail = {this.state.Profil.mail}
-        telephone = {this.state.Profil.telephone}
-        codepostale = {this.state.Profil.adresse_code_postale}
-        ville = {this.state.Profil.adresse_ville}
-        permis = {this.state.Profil.permis}
-        vehicule = {this.state.Profil.vehicule}
-        mobilite = {this.state.Profil.mobilite}
-      />
+
+      <div>
+        {profil}
+      </div>
+
+
+      
     );
   }
 }

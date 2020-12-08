@@ -1,11 +1,11 @@
-import React from 'react' 
+import React from 'react';
 
-state = {
-  show : false
-}
 
-montrerMissions = ()=>{
-  this.setState({
-    show : !this.state.show  
-  })
+export default function Mission(props){
+
+  return(
+
+  <li>{props.description}</li>
+
+  )
 }

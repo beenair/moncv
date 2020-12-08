@@ -31,14 +31,14 @@ export default class Hobbies extends Component {
 
     return(
 
-      <div className="mt-12">
+      <div className="mt-12 mb-6 px-3">
 
         {/* Titre */}
-        <div className="text-4xl text-center font-semibold">
+        <div className="text-3xl text-center font-semibold">
           Loisirs
         </div>
         {/* Loisirs */}
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {hobbies}
         </div>
 

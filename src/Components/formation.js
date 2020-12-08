@@ -30,11 +30,11 @@ export default class Formation extends Component {
     })
 
     return(
-      <div className="mt-12">
+      <div className="mt-12 px-3">
         {/* Titre */}
-        <div className="text-4xl text-center font-semibold">Formation</div>
+        <div className="text-3xl text-center font-semibold">Formation</div>
         {/* Diplomes */}
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {diplomes}
         </div>
       </div>
