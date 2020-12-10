@@ -11,7 +11,7 @@ export default class Hobbies extends Component {
 
 
   componentDidMount() {
-    axios.get("https://cv.beenair.fr/hobbies.php")
+    axios.get("https://api.beenair.fr/hobbies/")
       .then(res=>{
         this.setState({hobbies : res.data})
       })

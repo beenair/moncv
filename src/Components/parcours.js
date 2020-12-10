@@ -13,7 +13,7 @@ export default class Parcours extends Component {
 
   componentDidMount() {
 
-    axios.get('https://cv.beenair.fr/experience.php')
+    axios.get('https://api.beenair.fr/experience')
     .then(res=>{
       this.setState({experiences : res.data});
     })

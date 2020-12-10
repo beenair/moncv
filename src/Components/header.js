@@ -11,7 +11,7 @@ export default class Header extends Component{
 
   componentDidMount() {
 
-    axios.get(`https://cv.beenair.fr/profil.php`)
+    axios.get(`https://api.beenair.fr/profil`)
     .then(res=>{
       this.setState({Profil : res.data});
     })

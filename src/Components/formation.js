@@ -10,7 +10,7 @@ export default class Formation extends Component {
   }
 
   componentDidMount(){
-    axios.get("https://cv.beenair.fr/formation.php")
+    axios.get("https://api.beenair.fr/formation/")
       .then(res=>{
         this.setState({diplomes : res.data});
       })
